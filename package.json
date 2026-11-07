@@ -1,0 +1,46 @@
+{
+  "name": "e-commerce-backend-api",
+  "version": "1.0.0",
+  "description": "Production-grade E-Commerce Backend & React Dashboard with Express, Mongoose, JWT & Bcrypt",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "cd client && npm run build",
+    "client:dev": "cd client && npm run dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "api",
+    "react",
+    "express",
+    "mongodb",
+    "jwt",
+    "cart",
+    "orders"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.0",
+    "morgan": "^1.12.1",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1",
+    "vitest": "^5.1.0"
+  }
+}
